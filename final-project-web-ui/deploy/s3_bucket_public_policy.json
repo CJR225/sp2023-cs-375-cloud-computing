@@ -9,7 +9,7 @@
             "Resource": "arn:aws:s3:::sample-bucket-dn/*",
             "Condition": {
                 "IpAddress": {
-                    "aws:SourceIp": "68.230.140.43/32"
+                    "aws:SourceIp": "192.152.243.161/32"
                 }
             }
         },

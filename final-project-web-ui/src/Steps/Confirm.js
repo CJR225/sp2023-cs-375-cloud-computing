@@ -7,10 +7,32 @@ export const Confirm = () => {
   const { handleSubmit } = useForm({ defaultValues: state });
 
   const submitData = (data) => {
+
     console.info(data);
     // Submit data to the server
+    
+    // Sample React Fetch command to retrieve data using "GET"
+    // Simple POST request with a JSON body using fetch
+    const requestOptions = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(    {
+            "username": "janedoe",
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "age": 25,
+            "account_type": "standard_user"
+        })
+      };
+
+    // Fetch with URL
+    fetch('https://77khpd2wsf.execute-api.us-east-1.amazonaws.com/prod/requests', requestOptions)
+    .then((response) => console.log(response))
+    //.then((data) => console.log(data))
+    .catch((error) => console.log(error));
   };
 
+  
   return (
     <Form onSubmit={handleSubmit(submitData)}>
       <h1 className="mb-4">Confirm</h1>
