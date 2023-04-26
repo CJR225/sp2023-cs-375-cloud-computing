@@ -18,7 +18,7 @@ root.render(
       <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          CS 375 - Spring 2023 - Sample UI Application - [Update with your Name Here]
+          CS 375 - Spring 2023 - Sample UI Application - Christopher Rocco
         </Typography>
         <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
         This is a sample UI application that will be deployed to AWS Cloud Platform. This application simulates a wizard form that has multiple steps available in it.
